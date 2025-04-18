@@ -11,43 +11,44 @@ import Foundation
 
 public enum TextStyle: Hashable, Sendable {
     // Typography
-    case largeTitle(color: Color = ThemeColors.text.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
-    case largeTitleBold(color: Color = ThemeColors.text.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case largeTitle(color: Color = .dsTextPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case largeTitleBold(color: Color = .dsTextPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
     
-    case title1(color: Color = ThemeColors.text.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
-    case title2(color: Color = ThemeColors.text.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
-    case title3(color: Color = ThemeColors.text.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case title1(color: Color = .dsTextPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case title2(color: Color = .dsTextPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case title3(color: Color = .dsTextPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
     
-    case headline(color: Color = ThemeColors.text.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
-    case body(color: Color = ThemeColors.text.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
-    case callout(color: Color = ThemeColors.text.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
-    case subheadline(color: Color = ThemeColors.text.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
-    case footnote(color: Color = ThemeColors.text.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case headline(color: Color = .dsTextPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case body(color: Color = .dsTextPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case callout(color: Color = .dsTextPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case subheadline(color: Color = .dsTextPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case footnote(color: Color = .dsTextPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
     
-    case caption1(color: Color = ThemeColors.text.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
-    case caption2(color: Color = ThemeColors.text.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case caption1(color: Color = .dsTextPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case caption2(color: Color = .dsTextPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
     
-    case bodyBold(color: Color = ThemeColors.text.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
-    case bodyLinkBold(color: Color = ThemeColors.text.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case bodyBold(color: Color = .dsTextPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case bodyLinkBold(color: Color = .dsTextPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
     
-    case calloutBold(color: Color = ThemeColors.text.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
-    case subheadlineBold(color: Color = ThemeColors.text.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
-    case subheadlineLinkBold(color: Color = ThemeColors.text.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case calloutBold(color: Color = .dsTextPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case subheadlineBold(color: Color = .dsTextPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case subheadlineLinkBold(color: Color = .dsTextPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
     
-    case footnoteBold(color: Color = ThemeColors.text.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
-    case caption1Bold(color: Color = ThemeColors.text.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
-    case caption2Bold(color: Color = ThemeColors.text.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case footnoteBold(color: Color = .dsTextPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case caption1Bold(color: Color = .dsTextPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case caption2Bold(color: Color = .dsTextPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
     
     // Text components
-    case regularBoldLink(color: Color = ThemeColors.link.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
-    case mediumBoldLink(color: Color = ThemeColors.link.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
-    case smallBoldLink(color: Color = ThemeColors.link.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
-    case superscriptTitle(color: Color = ThemeColors.link.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
-    case superscriptTitleLink(color: Color = ThemeColors.link.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
-    case superscripBody(color: Color = ThemeColors.link.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
-    case superscriptBodyLink(color: Color = ThemeColors.link.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case regularBoldLink(color: Color = .dsLinkPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case mediumBoldLink(color: Color = .dsLinkPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case smallBoldLink(color: Color = .dsLinkPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case superscriptTitle(color: Color = .dsLinkPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case superscriptTitleLink(color: Color = .dsLinkPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case superscripBody(color: Color = .dsLinkPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
+    case superscriptBodyLink(color: Color = .dsLinkPrimary, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
 }
 
+// MARK: - Color Access
 extension TextStyle {
     public func color() -> Color {
         switch self {
@@ -81,7 +82,10 @@ extension TextStyle {
             return color
         }
     }
-    
+}
+
+// MARK: - Line Limit Access
+extension TextStyle {
     public var lineLimit: Int? {
         switch self {
         case .largeTitle(_, let limit, _),
@@ -114,7 +118,10 @@ extension TextStyle {
             return limit
         }
     }
-    
+}
+
+// MARK: - Minimum Scale Factor Access
+extension TextStyle {
     public var minimumScaleFactor: CGFloat? {
         switch self {
         case .largeTitle(_, _, let factor),
@@ -147,166 +154,125 @@ extension TextStyle {
             return factor
         }
     }
-    
+}
+
+// MARK: - Font Definitions
+extension TextStyle {
+    @MainActor
     public func font() -> Font {
+        let isDynamicTypeEnabled = FontProvider.isDynamicTypeEnabled
+        
         switch self {
         case .largeTitle:
             return Font.system(size: 34)
         case .largeTitleBold:
             return Font.system(size: 34).weight(.bold)
         case .title1:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.title).weight(.bold)
-            } else {
-                return Font.system(size: 28).weight(.bold)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.title).weight(.bold) :
+            Font.system(size: 28).weight(.bold)
         case .title2:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.title2).weight(.bold)
-            } else {
-                return Font.system(size: 22).weight(.bold)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.title2).weight(.bold) :
+            Font.system(size: 22).weight(.bold)
         case .title3:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.title3).weight(.semibold)
-            } else {
-                return Font.system(size: 20).weight(.semibold)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.title3).weight(.semibold) :
+            Font.system(size: 20).weight(.semibold)
         case .headline:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.headline).weight(.semibold)
-            } else {
-                return Font.system(size: 17).weight(.semibold)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.headline).weight(.semibold) :
+            Font.system(size: 17).weight(.semibold)
         case .body:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.body)
-            } else {
-                return Font.system(size: 17)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.body) :
+            Font.system(size: 17)
         case .callout:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.callout).weight(.semibold)
-            } else {
-                return Font.system(size: 16).weight(.semibold)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.callout).weight(.semibold) :
+            Font.system(size: 16).weight(.semibold)
         case .subheadline:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.subheadline)
-            } else {
-                return Font.system(size: 15)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.subheadline) :
+            Font.system(size: 15)
         case .footnote:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.footnote)
-            } else {
-                return Font.system(size: 13)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.footnote) :
+            Font.system(size: 13)
         case .caption1:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.caption)
-            } else {
-                return Font.system(size: 12)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.caption) :
+            Font.system(size: 12)
         case .caption2:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.caption2)
-            } else {
-                return Font.system(size: 11)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.caption2) :
+            Font.system(size: 11)
         case .bodyBold:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.body).weight(.semibold)
-            } else {
-                return Font.system(size: 17).weight(.semibold)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.body).weight(.semibold) :
+            Font.system(size: 17).weight(.semibold)
         case .bodyLinkBold:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.body).weight(.bold)
-            } else {
-                return Font.system(size: 17).weight(.bold)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.body).weight(.bold) :
+            Font.system(size: 17).weight(.bold)
         case .calloutBold:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.callout).weight(.semibold)
-            } else {
-                return Font.system(size: 16).weight(.semibold)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.callout).weight(.semibold) :
+            Font.system(size: 16).weight(.semibold)
         case .subheadlineBold:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.subheadline).weight(.semibold)
-            } else {
-                return Font.system(size: 15).weight(.semibold)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.subheadline).weight(.semibold) :
+            Font.system(size: 15).weight(.semibold)
         case .subheadlineLinkBold:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.subheadline).weight(.bold)
-            } else {
-                return Font.system(size: 15).weight(.bold)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.subheadline).weight(.bold) :
+            Font.system(size: 15).weight(.bold)
         case .footnoteBold:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.caption).weight(.semibold)
-            } else {
-                return Font.system(size: 13).weight(.semibold)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.caption).weight(.semibold) :
+            Font.system(size: 13).weight(.semibold)
         case .caption1Bold:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.caption).weight(.semibold)
-            } else {
-                return Font.system(size: 12).weight(.semibold)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.caption).weight(.semibold) :
+            Font.system(size: 12).weight(.semibold)
         case .caption2Bold:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.caption2).weight(.semibold)
-            } else {
-                return Font.system(size: 11).weight(.semibold)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.caption2).weight(.semibold) :
+            Font.system(size: 11).weight(.semibold)
         case .regularBoldLink:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.body).weight(.bold)
-            } else {
-                return Font.system(size: 17).weight(.bold)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.body).weight(.bold) :
+            Font.system(size: 17).weight(.bold)
         case .mediumBoldLink:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.subheadline).weight(.bold)
-            } else {
-                return Font.system(size: 15).weight(.bold)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.subheadline).weight(.bold) :
+            Font.system(size: 15).weight(.bold)
         case .smallBoldLink:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.footnote).weight(.bold)
-            } else {
-                return Font.system(size: 13).weight(.bold)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.footnote).weight(.bold) :
+            Font.system(size: 13).weight(.bold)
         case .superscriptTitle:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.footnote)
-            } else {
-                return Font.system(size: 13)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.footnote) :
+            Font.system(size: 13)
         case .superscriptTitleLink:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.footnote).weight(.bold)
-            } else {
-                return Font.system(size: 13).weight(.bold)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.footnote).weight(.bold) :
+            Font.system(size: 13).weight(.bold)
         case .superscripBody:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.caption2)
-            } else {
-                return Font.system(size: 11)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.caption2) :
+            Font.system(size: 11)
         case .superscriptBodyLink:
-            if ThemeProvider.isDynamicTypeEnabled {
-                return Font.system(.caption2).weight(.bold)
-            } else {
-                return Font.system(size: 11).weight(.bold)
-            }
+            return isDynamicTypeEnabled ?
+            Font.system(.caption2).weight(.bold) :
+            Font.system(size: 11).weight(.bold)
         }
     }
-    
+}
+
+// MARK: - UIFont Definitions
+extension TextStyle {
     public func uiFont() -> UIFont {
         switch self {
         case .largeTitle:
@@ -365,4 +331,16 @@ extension TextStyle {
             return UIFont.preferredFont(ofSize: 11, weight: .bold)
         }
     }
+}
+
+private enum FontProvider {
+    @MainActor
+    static var isDynamicTypeEnabled: Bool {
+        ThemeProvider.isDynamicTypeEnabled
+    }
+}
+
+extension Color {
+    public static let dsTextPrimary = ThemeColors.text.primary.color
+    public static let dsLinkPrimary = ThemeColors.link.primary.color
 }
