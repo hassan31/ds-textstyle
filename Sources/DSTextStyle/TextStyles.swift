@@ -273,6 +273,7 @@ extension TextStyle {
 
 // MARK: - UIFont Definitions
 extension TextStyle {
+    @MainActor
     public func uiFont() -> UIFont {
         switch self {
         case .largeTitle:
