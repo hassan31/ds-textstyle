@@ -9,7 +9,7 @@ import SwiftUI
 import DSColors
 import Foundation
 
-public enum TextStyle: Hashable {
+public enum TextStyle: Hashable, Sendable {
     // Typography
     case largeTitle(color: Color = ThemeColors.text.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
     case largeTitleBold(color: Color = ThemeColors.text.primary.color, lineLimit: Int? = nil, minimumScaleFactor: CGFloat? = nil)
