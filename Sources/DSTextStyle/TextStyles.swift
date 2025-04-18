@@ -333,7 +333,7 @@ extension TextStyle {
     }
 }
 
-private enum FontProvider {
+public enum FontProvider {
     @MainActor
     static var isDynamicTypeEnabled: Bool {
         ThemeProvider.isDynamicTypeEnabled

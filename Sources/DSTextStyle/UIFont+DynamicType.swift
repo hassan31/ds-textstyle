@@ -9,11 +9,12 @@ import UIKit
 import DSColors
 
 public extension UIFont {
+    @MainActor
     class func preferredFont(ofSize fontSize: CGFloat,
                              maxFontSize: CGFloat? = nil,
                              weight: UIFont.Weight = .regular) -> UIFont {
         let font: UIFont = .systemFont(ofSize: fontSize, weight: weight)
-        if ThemeProvider.isDynamicTypeEnabled {
+        if FontProvider.isDynamicTypeEnabled {
             if let maxFontSize {
                 return UIFontMetrics.default.scaledFont(for: font, maximumPointSize: maxFontSize)
             } else {
